@@ -98,4 +98,44 @@ git add %
  1 file changed, 6 insertions(+)
  create mode 100644 katy-williams.txt
 ```
+### 5. Push your changes to the remote repo to create a pull request
+Now that you have a commit, we need to move these changes to the remote repository (repo). To do this we'll use the `git push` command. 
+
+The first time you call `git push` on a new branch, you'll see this message pop up:
+```
+% git push
+fatal: The current branch add-katy-williams-info has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin add-katy-williams-info
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```
+
+**THIS IS OK!** GitHub is telling you that there isn't yet a remote version of your branch. We need to set up this remote branch so that the remote repo knows about it. To do this, copy and paste the prescribed command that appeared in the warning:
+```
+git push --set-upstream origin add-katy-williams-info
+```
+You'll see this output:
+```
+ % git push --set-upstream origin add-katy-williams-info
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 494 bytes | 494.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'add-katy-williams-info' on GitHub by visiting:
+remote:      https://github.com/kawilliams/github-practice/pull/new/add-katy-williams-info
+remote: 
+To https://github.com/kawilliams/github-practice.git
+ * [new branch]      add-katy-williams-info -> add-katy-williams-info
+branch 'add-katy-williams-info' set up to track 'origin/add-katy-williams-info'.
+```
+
+Copy and paste the pull request link to see your pull request on [github.com](github.com)
+
+
 
