@@ -39,3 +39,63 @@ Now that you have a local version of the code, we'll go through your typical wor
   7. If all looks good, the teammate merges the pull request
   8. You can delete your branch once the changes are merged
 
+### 1. Pull any changes
+Start by checking what branch you have checked out to your local machine:
+```
+% git branch
+* main
+```
+If any other branches exist, you'll see them displayed. Since we're on `main`, let's pull the latest changes from main to make sure our code is up to date:
+```
+git pull
+```
+
+### 2. Create a new branch
+Let's make a new branch that is based on `main`. We want to make sure we are currently on `main` (that was step 1 with `git branch`). Since we are, any new branch we make will be based on the branch we are on -- which is what we want. We're going to add a file with your information in it, so call your branch something useful: `add-<name>-info` (where `<name>` is replaced with your first and last name:
+```
+git checkout -b add-katy-williams-info
+```
+The `checkout` command tells GitHub to switch to a different branch. The `-b` flag tells GitHub that we are switching to a new branch, and we provide the name of that new branch.
+
+Now if you call `git branch`, you should see your new branch and a star (`*`) indicating we are on that branch.
+```
+% git branch
+* add-katy-williams-info
+  main
+```
+
+### 3. Edit the code in your branch.
+In VS Code, make a new text file and call it `<name>.txt`, where you replace `<name>` with your first and last name.
+Add the following content to your file and personlize it to make it yours:
+```
+My name is ____. I am a sophomore/junior/senior at Davidson College. I'm majoring in ____.
+
+My favorite Dad joke or knock-knock joke is:
+__________
+```
+
+Save your work.
+
+### 4. Commit your changes.
+To publish the changes you made, we need to use the `commit` command. There are two steps to this part: `add` the changed files and then `commit` the change. Think of commit as a benchmark for some work -- you completed an activity that takes a meaningful step forward. You may have several commits that make up a pull request, so commits don't need to solve the *whole* problem, just a meaningful step.
+
+To add the changed files, first do:
+```
+git add .
+```
+The `add` command adds any changes to a new commit. If you don't specify which files and simply use the `.`, Git will add all of the changes within your current directory. If you want to specify each individual file, you can by doing `git add katy-williams.txt` if I wanted to only add my `katy-williams.txt` file to the commit.
+
+Once you've added all of your files that contribute to the commit, you should use `commit` and write a useful (but short) message describing what this commit does:
+```
+git commit -m "Adds my joke file"
+```
+All together, your output should look like this:
+```
+git add %                                                                                                                   
+ % git add .
+ % git commit -m "Adding katy-williams.txt"
+[add-katy-williams-info 758ea7c] Adding katy-williams.txt
+ 1 file changed, 6 insertions(+)
+ create mode 100644 katy-williams.txt
+```
+
