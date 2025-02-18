@@ -135,7 +135,20 @@ To https://github.com/kawilliams/github-practice.git
 branch 'add-katy-williams-info' set up to track 'origin/add-katy-williams-info'.
 ```
 
-Copy and paste the pull request link to see your pull request on [github.com](github.com)
+Copy and paste the pull request link to see your pull request on [github.com](github.com).
+
+### 6. Review the pull request.
+
+On GitHub.com, you'll see the commits and changes that you made. You should click "Submit Pull Request" and then review all of the changes. If everything looks good, click "Merge Pull Request".
+
+![]()
+
+![]()
+
+### 7. Delete your branch.
+Click on "Delete branch" to delete the remote branch. **Your local branch will still exist!** Go back to VS Code to see your branch.
+
+In VS Code, switch back to `main`. You'll see an outdated version of `main` that doesn't include your new `.txt` file. Do `git pull` to pull the updated changes to your local version of the repository.
 
 
 
