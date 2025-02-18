@@ -5,7 +5,7 @@ GitHub practice for CSC 362
 Begin by cloning this repository to your local computer. This code in this repository is located in the cloud at the moment. We want to make a local copy of the repository so that you can practice making edits to this local version, committing the edits to be shared, and then submitting a pull request to merge those edits and actually share them on GitHub.
 
 To do this, first open VS Code to the home page. You can do this through VS Code's interface or through VS Code's command line -- I'll explain the command line. In the upper right corner of VS Code, click the terminal button:
-![]()
+![Terminal](./images/terminal.png)
 
 In the terminal at the bottom of VS Code, type `ls`. This will show you all of the directories and files in your current working directory. Which directory is that? Type `pwd` to see where you are in the computer.
 
@@ -136,14 +136,18 @@ branch 'add-katy-williams-info' set up to track 'origin/add-katy-williams-info'.
 ```
 
 Copy and paste the pull request link to see your pull request on [github.com](github.com).
+![PR notification](./images/PR-notification.png)
 
 ### 6. Review the pull request.
 
-On GitHub.com, you'll see the commits and changes that you made. You should click "Submit Pull Request" and then review all of the changes. If everything looks good, click "Merge Pull Request".
+On GitHub.com, you'll see a prompt to open the pull request. 
 
-![]()
+![](./images/open-PR.png)
 
-![]()
+You should click "Submit Pull Request" and then review all of the changes. If everything looks good, click "Merge Pull Request".
+
+![](./images/PR.png)
+
 
 ### 7. Delete your branch.
 Click on "Delete branch" to delete the remote branch. **Your local branch will still exist!** Go back to VS Code to see your branch.
